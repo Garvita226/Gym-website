@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Fredoka One', cursive;
+            margin: 0px;
+            padding: 0px;
+            background: url(images/bg.jpg);
+            background-size: 100%;
+            color: white;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .left img {
+            width: 84px;
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .left #name {
+            background: #151414;
+            margin-top: -5px;
+        }
+
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 42%;
+            margin: 18px auto;
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            top: 19px;
+            right: 13px;
+        }
+
+        .navbar {
+            background-color: #151414;
+            border: 2px solid gray;
+            border-radius: 32px;
+            height: 45px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .navbar ul{
+            margin-top: 11px;
+            margin-left: -14px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 2px 5px;
+            margin: 6px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            color: black;
+            background-color: white;
+        }
+
+        .btn {
+            padding: 5px 5px;
+            margin: 0px 6px;
+            border: 2px solid gray;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: 'Fredoka One', cursive;
+
+        }
+
+        .btn:hover {
+            background-color: gray;
+            cursor: pointer;
+            font-weight: bold;
+            color: black;
+        }
+
+        .container {
+            border: 2px solid white;
+            border-radius: 14px;
+            width: 35%;
+            height: 407px;
+            margin: 62px 811px;
+            padding: 2px 38px;
+            box-sizing: border-box;
+        }
+
+        .container h2 {
+            text-align: center;
+            font-weight: lighter;
+        }
+
+        form {
+            margin-top: 33px;
+        }
+
+        .form input {
+            text-align: center;
+            display: block;
+            width: 271px;
+            margin: 9px auto;
+            padding: 2px;
+            font-size: 19px;
+            border-radius: 8px;
+            border: 2px solid #151313;
+            font-family: 'Fredoka One', cursive;
+        }
+
+        .form button {
+            display: block;
+            margin: 27px auto;
+            width: 272px;
+        }
+    </style>
+</head>
+
+<body>
+<header class="header">
+
+    <!-- left box for logo -->
+    <div class="left">
+        <img src="images/logo.jpg" alt="">
+        <div id="name">BFit</div>
+    </div>
+
+    <!-- mid box for navbar -->
+    <div class="mid">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- right box for buttons -->
+    <div class="right">
+        <button class="btn">Book Free Trial</button>
+        <button class="btn">Join Us</button>
+    </div>
+
+</header>
+
+    <div class="container">
+        <div>
+            <h2>Start your journey today</h2>
+        </div>
+        <form action="noaction" class="form">
+            <div>
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div>
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div>
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div>
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+            <div>
+                <input type="text" name="" placeholder="Enter your phone no.">
+            </div>
+            <div>
+                <input type="email" name="" placeholder="Enter your Email ID">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
